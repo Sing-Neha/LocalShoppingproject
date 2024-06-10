@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="reg.css" type="text/css">
+    <link rel="stylesheet" href="home.css" type="text/css">
+  
+    <link rel="stylesheet" href="style1.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+  
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+   <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #home {
+            color: aqua;
+            font-size: 12px;
+            font-family: 'Play', sans-serif;
+        }
+
+        #menu {
+            color: white;
+            font-size: 12px;
+            font-family: 'Play', sans-serif;
+            transition: all 0.3s ease;
+            opacity: 1;
+        }
+
+        #menu:hover {
+            color: #17A589;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .cont-sec .contact-cont {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .cont-sec p {
+            margin: 0;
+        }
+
+        .cont-sec p a {
+            text-decoration: none;
+            color: #303054;
+        }
+
+        .cont-sec .social {
+            text-align: right
+        }
+
+        .cont-sec .social a img {
+            width: 20px;
+            margin-left: 15px;
+        }
+
+        .footer {
+            background-color: #2c3e50;
+            padding: 80px;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer-col ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            padding: 13px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+        /responsive/
+        @media(max-width: 767px) {
+            .footer-col {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media(max-width: 574px) {
+            .footer-col {
+                width: 100%;
+            }
+        }
+
+        .gallery {
+            margin: 15px;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            padding: 5px;
+            filter: normal(100%);
+            transition: 1s;
+        }
+
+        .gallery img:hover {
+            filter: normal(0);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light  px-4 border-bottom fixed-top"  style="background-color: #d78692; " >
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3 text-light" href="logo.html">Local-<span class="text-primary">Shop</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5  text-center">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="product .html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="#"></a>
+              </li>
+              <li class="nav-item dropdown text-light">
+                <a class="nav-link dropdown-toggle  text-light" href="service.html" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Account Connect
+                </a>
+                <ul class="dropdown-menu text-light" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="log.html">Login</a></li>
+                  <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="reg.html">Registration Page</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="service.html" tabindex="-1" aria-disabled="true">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="onsale.html">On Sale</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="my cart.html">My Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="contact.us.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br><br>
+    
+
+    <div class="container-fluid " style="background-image: url(img/b.webp); background-repeat: no-repeat; background-size: cover;">
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 gallery animate_animated  animate_fadesindown">
+                <h1 style="font-weight:bold; text-align: center;"> My Favorite Product </h1>
+                <hr style="height:3px;width: 88%;background:pink">
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 gallery animate_animated  animate_fadeInDown">
+
+                <a href="img/c2.webp" data-lightbox="mygallery"><img src="img/c1.jpeg"></a>
+                <a href="img/c4.jpg" data-lightbox="mygallery"><img src="img/c2.webp"></a>
+                <a href="img/c4.webp" data-lightbox="mygallery"><img src="img/c3.jpeg"></a>
+                <a href="img/c5.jpeg" data-lightbox="mygallery"><img src="img/c4.jpg"></a>
+                <a href="img/c6.jpeg" data-lightbox="mygallery"><img src="img/c5.jpeg"></a>
+                <a href="img/c1.jpeg" data-lightbox="mygallery"><img src="img/c6.jpeg"></a>
+                <a href="img/c3.jpeg" data-lightbox="mygallery"><img src="img/c1.jpeg"></a>
+                <a href="img/c6.jpeg" data-lightbox="mygallery"><img src="img/c2.webp"></a>
+                <a href="img/c5.jpeg" data-lightbox="mygallery"><img src="img/c3.jpeg"></a>
+                <a href="img/c3.jpeg" data-lightbox="mygallery"><img src="img/c1.jpeg"></a>
+                <a href="img/c6.jpeg" data-lightbox="mygallery"><img src="img/c2.webp"></a>
+                <a href="img/c5.jpeg" data-lightbox="mygallery"><img src="img/c3.jpeg"></a>
+
+
+            </div>
+            <div class="col-sm-2"></div>
+
+        </div>
+    </div>
+   
+
+        <script>
+            $('#myModal').on('shown.bs.modal', function () {
+                $('#myInput').focus()
+            })
+        </script>
+        <!-- Footer -->
+  <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-between p-4" style="background-color:  #d78692">
+      <!-- Left -->
+      <div class="me-0">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">Local_Shop</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>
+              To deliver on the promise of technology and human ingenuity We help our clients become the next and best
+              versions of themselves.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Products</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>
+              <a href="testimonial.html" class="text-white">Testimonials</a>
+            </p>
+            <p>
+              <a href="myprofile.html" class="text-white">My-Profile</a>
+            </p>
+            <p>
+              <a href="enquiry.html" class="text-white">Enquiry</a>
+            </p>
+            <p>
+              <a href="product .html" class="text-white">Product</a>
+            </p>
+            <p>
+              <a href="gallery1.html" class="text-white">Gallery</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>
+              <a href="home.html" class="text-white">Home</a>
+            </p>
+            <p>
+              <a href="gallery1.html" class="text-white">My Favorite Products</a>
+            </p>
+            <p>
+              <a href="about.html" class="text-white">About Us</a>
+            </p>
+            <p>
+              <a href="service.html" class="text-white">Services</a>
+            </p>
+            <p>
+              <a href="signup.html" class="text-white">Sign Up</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #a182f7; height: 2px" />
+            <p><i class="fas fa-home mr-3"></i> Chitrakoot, 123654, india</p>
+            <p><i class="fas fa-envelope mr-3"></i> xxxxxxxx@example.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 91 25 222 555 99</p>
+            <p><i class="fas fa-print mr-3"></i> + 91 25 222 555 99</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+
+
+      <!-- Grid container -->
+
+      <!-- Section: Images -->
+      <section class="">
+        <div class="row">
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+              <img src="img/p2.jpeg" class="w-100"  id="image1"/>
+              <div class="overlay">
+                <div class="text">Hello World</div>
+              </div>
+            
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+              <img src="img/p1.jpg" class="w-100" id="image1"/>
+              <div class="overlay">
+                <div class="text">Hello World</div>
+              </div>
+            
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+              <img src="img/p2.jpeg" class="w-100"  id="image1"/>
+              <div class="overlay">
+                <div class="text">Hello World</div>
+              </div>
+             
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+              <img src="img/p1.jpg" class="w-100" id="image1" />
+              <div class="overlay">
+                <div class="text">Hello World</div>
+              </div>
+             
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+              <img src="img/p2.jpeg" class="w-100"  id="image1"/>
+              <div class="overlay">
+                <div class="text">Hello World</div>
+              </div>
+             
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+              <img src="img/p1.jpg" class="w-100"  id="image1"/>
+              <div class="overlay">
+                <div class="text">Hello World</div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Images -->
+
+      <!-- Grid container -->
+
+
+
+
+
+      <!-- End of .container -->
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <a class="text-white" href="#">Create By Neha Singh</a>
+      </div>
+      <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+</body>
+
+</html>
